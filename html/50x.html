@@ -1,21 +1,404 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-<title>Error</title>
+<title>Watch TestA2 Streaming  - Create Free Streaming Account at SSH101.com</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Broadcast Unlimited Live Streaming - It is absolutely FREE!. Supports RTMP Flash, HLS (Android, iOS, IPTV) " />
+<meta name="keywords" content="Live Streaming, Unlimited Free Streaming, Broadcast, rtmp, hls, flash, iphone, ipad, roku, android, iptv" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+
+
+
 <style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
+body { font-family :   Geneva, Arial, Helvetica, sans-serif; color:#dddddd; link:#3BA3FF; vlink:#3BA3FF }
+ a:link    {color:3BA3FF;}
+ a:visited {color:3BA3FF;}
+ a:hover   {color:7DC2FF;}
+ a:active  {color:3BA3FF;}
+ html { 
+  background: url(/images/bg3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 </style>
+
+<link rel="stylesheet" type="text/css" href="/fplayer/7.2.7/skin/skin.css">
+
+<style type="text/css">
+html,body { font: 12px "Myriad Pro", "Lucida Grande", sans-serif; text-align: center; padding: 0%;  margin: 0; }
+</style>
+
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/fplayer/7.2.7/flowplayer.min.js"></script>
+<script src="/fplayer/7.2.7/flowplayer.set.js"></script>
+<script src="/fplayer/7.2.7/hls.light.min.js"></script>
+<script type="text/javascript" src="/js/plugins.js"></script>
+<style>
+.flowplayer {
+  background: #000000;
+  background-color: #000000  !important;
+  margin-bottom: 0px;
+  padding-top 41.67%;
+   width:100%;
+   
+  background-image: url(/images/ssh101.jpg) ;
+  background-size: 100% 100%; 
+}
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .flowplayer {
+    background-image: url(/images/ssh101.jpg);
+  }
+}
+
+.flowplayer.is-error .fp-message {
+  background-image: url(/images/ssh101-notfound.jpg);
+  background-size: contain;
+ background-repeat: no-repeat;
+   /* make iframe fill wrapper */
+   Font-size:50px;
+   vertical-align: middle;
+   color:#ff0000;
+     text-shadow: 2px 2px #111111;
+   text-align:center;
+  position: absolute;
+  font-weight:bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.flowplayer.is-error .fp-message h2,
+.flowplayer.is-error .fp-message p {
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px #fff
+}
+.flowplayer.is-error .fp-message h2 {
+  font-size: 200%;
+}
+.flowplayer.is-error .fp-message p {
+  font-size: 150%;
+}
+.flowplayer.is-mouseout .fp-ui {
+  cursor: none !important;
+}
+
+.player-frame-wrapper {
+  position: relative;
+  width: 100%;
+ 
+  /* room for slim timeline */
+  padding-bottom: 3px;
+}
+.player-frame-wrapper-ratio {
+  /* same as player ratio */
+  padding-top: 41.67%;
+}
+ 
+.player-frame {
+  /* make iframe fill wrapper */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.flowplayer .fp-logo {
+  /* logo always visible, even on origin domain */
+  display: block;
+  opacity: 0.3 !important;
+ 
+  left: auto; /* avoid logo being stuck on left side */
+ left:1.5%;
+  top: 5px;
+fullscreenOnly: true;
+}
+
+</style>
+<script>
+flowplayer.conf = {
+ fullscreen: true,
+ share: false,
+ // iOS allows only native fullscreen from within iframes
+  native_fullscreen: true
+};
+</script>
 </head>
-<body>
-<h1>An error occurred.</h1>
-<p>Sorry, the page you are looking for is currently unavailable.<br/>
-Please try again later.</p>
-<p>If you are the system administrator of this resource then you should check
-the <a href="http://nginx.org/r/error_log">error log</a> for details.</p>
-<p><em>Faithfully yours, nginx.</em></p>
-</body>
+<body >
+<!--- <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> --->
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> 
+<!--- <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"> --->
+<style>
+#menu-toggle {
+    z-index: 8999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #09101d;
+    border:0px;
+}
+#chat-container.fixed {
+    position: fixed;
+    min-height: 0 !important;
+    height: 800px;
+    background-color: #09101d;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+
+            /* border-left: 1px solid #495d7f; */
+}
+#chat-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 290px;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*overflow: scroll;*/
+}
+
+#chat-container .chat-header {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 10px;
+    line-height: 1;
+    margin: 0;
+    border-bottom: 1px solid #53698f33;
+    background-color: #09101d;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ABABAB;
+}
+
+   @media (max-width:768px)
+   {
+        #iframe{
+            height: 500px;
+        }
+        #chat-container
+        {
+            height: 550px;
+        }
+        #chat-container.fixed {
+            height: 550px;
+
+                    /* border-left: 1px solid #495d7f; */
+        }
+
+
+   }
+
+</style>
+<a href="javascript:void(0)" id="menu-toggle" class="btn-chat btn btn-default " style="z-index:8999; top:10px; right: 10px;border-radius: 5px;background: #73AD21;">
+   <i class="fa fa-comments bigicon" style="font-size:20px; color: #fff;padding:5px;"> Chat </i>
+</a>
+<div id="chat-container" class="fixed" style="display:none;">
+<h2 class="chat-header">
+    <i class="fa fa-comment"></i> TestA2's Chat
+    <a href="javascript:;" class="chat-form-close pull-right" style="font-size:20px;">
+    &times;
+    </a>
+</h2>
+
+<iframe src="/chatroom/index.php?fld=testA2" frameborder="0"  align="middle" width="100%" height="730" id="iframe" allow="encrypted-media"></iframe>
+</div>
+
+<script>
+$('.btn-chat').click(function () {
+    if($('#chat-box').is(':visible')){
+        $('#chat-container').toggle('slide', {direction: 'right'}, 500);
+        $('#chat-box').hide();
+        $("#playerarea").css("margin","auto");
+    } else{
+        $('#chat-container').toggle('slide', {direction: 'right'}, 500);
+/*
+	var pp = $("#playerarea")[0].getBoundingClientRect();
+	var pc = $("#chat-container")[0].getBoundingClientRect();
+	var xx = Math.round((pc.x-pp.width)/2);
+	var ww = $(window).width();
+	var ov = Math.round((ww - pp.width-pc.width)/2);
+	if (ov<0)
+	    ov=0;
+	if (pp.left>ov)
+            $("#playerarea").css("margin-left",""+ov+"px");
+*/
+    }
+});
+
+$(document).on('click', '.chat-form-close', function(){
+    $('#chat-container').toggle('slide', {direction: 'right'}, 500);
+    $('#chat-box').hide();
+    $("#playerarea").css("margin","auto");
+});
+</script>
+<div align="center">
+<br>
+
+<font style="color:#ffffff;font-size:35px;font-family: 'Cairo', sans-serif; text-transform: capitalize;" >testA2 Streaming    <font size="3"  style="color:#dddddd;font-size:19px;"> - Free Live Streaming Provided by  <a href="https://adult.ssh101.com">http://adult.ssh101.com &raquo;</a></font></font>
+
+<div align="left" style="width:100%">
+<div class='videocontent'>
+<div style="margin: auto; max-height:600px;max-width:1000px;" id="playerarea">
+<div id='fp' class='flowplayer fp-outlined fp-mute'></div>
+</div>
+</div>
+
+<div id="hitinfo" style="text-align:left;;padding:9px;   border-radius: 0px;color:#dddddd;font-size:14px;text-transform: capitalize;padding-left:10px; margin: auto; margin-bottom:10px;font-size:13px;text-align:right;color:#bbbbbb;font-family: 'Cairo', sans-serif;">
+<div align="center">Today View: 24 &nbsp;&nbsp; Total View: 24
+<script>
+flowplayer("#fp", {
+    key: '$484500622742150',
+    poster: 'default.png',
+		 native_fullscreen: true,
+	 logo: '/logo120.png',
+    ratio: 0.5625,
+    live: true,
+    dvr: false,
+    autoplay: true,
+    embed: false,
+    title: 'Live',
+    clip: {
+        sources: [{ type: "application/x-mpegurl", src: "https://tna5.bozztv.com/adult/testA2/index.m3u8", dvr: true}],
+        autoplay: true,
+        }
+  });
+</script>
+
+
+<br>
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+
+ 
+
+<!--- <div style="margin-top:-20px;text-align:center"><div class="dropdown">
+ <div align="center" style="padding-right:30px;">  <button onclick="myFunction()" class="dropbtn">Donate to SSH101</button></div>  
+  <div id="myDropdown" class="dropdown-content">
+   
+    <a href="https://checkout.stripe.com/pay/ppage_1HPbcOAm5BKbOiO5YJawZ0Qr#fidkdWxOYHwnPyd1blppbHNgWmNQbW9ORmpNTXJARj1gZmxMT2kzYn1JZicpJ2hsYXYnP34nYnBsYSc%2FJzVjNGcxZzE1KGQ2NTwoMTQ8ZyhnZjYzKGc3MDNkN2Q1YDVjMmdgPWAxYycpJ2hwbGEnPyc1PTEzNmM2PCg8ZDE1KDFhNWQoPGAwYyhmMjwxNz03PGZkM2YwMT1kNTInKSd2bGEnPyc3M2ZmMTZhZyhhMDI8KDFkZzYoPWNgZig2ZmA9Nzw0MWcwMWdmPDExYGYneCknZ2BxZHYnP15YKSd3YGNgd3dgd0p3bGJsayc%2FJ21xcXV2PyoqdnZtNDU0K2ZqaCcpJ2lqZmRpYCc%2Fa3BpaXgl">$5</a>
+	 <a href="https://checkout.stripe.com/pay/ppage_1HPbcgAm5BKbOiO5bsiYEBED#fidkdWxOYHwnPyd1blppbHNgWmNQbW9ORmpNTXJARj1gZmxMT2kzYn1JZicpJ2hsYXYnP34nYnBsYSc%2FJzVjNGcxZzE1KGQ2NTwoMTQ8ZyhnZjYzKGc3MDNkN2Q1YDVjMmdgPWAxYycpJ2hwbGEnPyc1PTEzNmM2PCg8ZDE1KDFhNWQoPGAwYyhmMjwxNz03PGZkM2YwMT1kNTInKSd2bGEnPyc3M2ZmMTZhZyhhMDI8KDFkZzYoPWNgZig2ZmA9Nzw0MWcwMWdmPDExYGYneCknZ2BxZHYnP15YKSd3YGNgd3dgd0p3bGJsayc%2FJ21xcXV2PyoqdnZtNDU0K2ZqaCcpJ2lqZmRpYCc%2Fa3BpaXgl">$10</a>
+    <a href="https://checkout.stripe.com/pay/ppage_1HPbcuAm5BKbOiO5nUi3NP5P#fidkdWxOYHwnPyd1blppbHNgWmNQbW9ORmpNTXJARj1gZmxMT2kzYn1JZicpJ2hsYXYnP34nYnBsYSc%2FJzVjNGcxZzE1KGQ2NTwoMTQ8ZyhnZjYzKGc3MDNkN2Q1YDVjMmdgPWAxYycpJ2hwbGEnPyc1PTEzNmM2PCg8ZDE1KDFhNWQoPGAwYyhmMjwxNz03PGZkM2YwMT1kNTInKSd2bGEnPyc3M2ZmMTZhZyhhMDI8KDFkZzYoPWNgZig2ZmA9Nzw0MWcwMWdmPDExYGYneCknZ2BxZHYnP15YKSd3YGNgd3dgd0p3bGJsayc%2FJ21xcXV2PyoqdnZtNDU0K2ZqaCcpJ2lqZmRpYCc%2Fa3BpaXgl">$25</a>
+    <a href="https://checkout.stripe.com/pay/ppage_1HPbdNAm5BKbOiO5aJv8UmFN#fidkdWxOYHwnPyd1blppbHNgWmNQbW9ORmpNTXJARj1gZmxMT2kzYn1JZicpJ2hsYXYnP34nYnBsYSc%2FJzVjNGcxZzE1KGQ2NTwoMTQ8ZyhnZjYzKGc3MDNkN2Q1YDVjMmdgPWAxYycpJ2hwbGEnPyc1PTEzNmM2PCg8ZDE1KDFhNWQoPGAwYyhmMjwxNz03PGZkM2YwMT1kNTInKSd2bGEnPyc3M2ZmMTZhZyhhMDI8KDFkZzYoPWNgZig2ZmA9Nzw0MWcwMWdmPDExYGYneCknZ2BxZHYnP15YKSd3YGNgd3dgd0p3bGJsayc%2FJ21xcXV2PyoqdnZtNDU0K2ZqaCcpJ2lqZmRpYCc%2Fa3BpaXgl">$50</a>
+    <a href="https://checkout.stripe.com/pay/ppage_1HPbdbAm5BKbOiO5xDhAjbRx#fidkdWxOYHwnPyd1blppbHNgWmNQbW9ORmpNTXJARj1gZmxMT2kzYn1JZicpJ2hsYXYnP34nYnBsYSc%2FJzVjNGcxZzE1KGQ2NTwoMTQ8ZyhnZjYzKGc3MDNkN2Q1YDVjMmdgPWAxYycpJ2hwbGEnPyc1PTEzNmM2PCg8ZDE1KDFhNWQoPGAwYyhmMjwxNz03PGZkM2YwMT1kNTInKSd2bGEnPyc3M2ZmMTZhZyhhMDI8KDFkZzYoPWNgZig2ZmA9Nzw0MWcwMWdmPDExYGYneCknZ2BxZHYnP15YKSd3YGNgd3dgd0p3bGJsayc%2FJ21xcXV2PyoqdnZtNDU0K2ZqaCcpJ2lqZmRpYCc%2Fa3BpaXgl">$100</a>			
+  </div>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<br><br>
+
+  </div> --->
+ 
+ 
+<!--- 
+ <br><div style="width:832px;color:#dddddd;font-size:15px;padding:9px; text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6); color:#ffffff;font-size:16px;font-weight:bold;font-weight:bold;padding:6px; border: 1px solid #444444;-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; font-family: 'Cairo', sans-serif;"">
+ START YOUR OWN 24/7 LIVE LINEAR TV CHANNEL IN 4 SIMPLE STEPS:  <a href="https://www.livestreamingcdn.com/cloud-playout-landing.php" target="_blank">www.LiveStreamingCDN.com</a> 
+</div>
+
+ --->
+<!-- Default Statcounter code for Ssh101.com Live Player
+http://adult.ssh101.com/live -->
+<script type="text/javascript">
+var sc_project=12366682; 
+var sc_invisible=1; 
+var sc_security="0ef72411"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12366682/0/0ef72411/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+  
+ 
+<div align="center"> <br><br><br><br>
+ <font style="font-size:11px;">&copy; 
+ <script language="JavaScript">
+ var d=new Date();
+ yr=d.getFullYear();
+ document.write(yr);
+ </script>  <a href="http://www.SSH101.com">SSH101.com</a>. All rights reserved.</font> </div>
+ </div>
+ </body>
 </html>
